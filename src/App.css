@@ -1,0 +1,62 @@
+/* Простые стили: без анимаций и декоративных эффектов */
+
+.app {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+button {
+  padding: 8px 14px;
+  margin: 6px 6px 6px 0;
+  cursor: pointer;
+}
+
+input,
+select {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.test-list {
+  padding: 0;
+}
+
+.card {
+  border: 2px solid #222;
+  border-radius: 12px;
+  padding: 16px;
+  margin: 16px 0;
+  list-style: none;
+}
+
+.card:focus {
+  outline: 2px solid #0a58ca;
+}
+
+.option {
+  display: block;
+  margin: 8px 0;
+}
+
+.option input {
+  display: inline;
+  width: auto;
+  margin-right: 8px;
+}
+
+.error {
+  color: #b00020;
+}
+
+.score {
+  font-size: 22px;
+  font-weight: bold;
+}
