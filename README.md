@@ -33,4 +33,5 @@ GitHub Actions**.
 
 - `screenshots/` — скриншоты;
 - `build.log` — вывод `npm run build`;
+- `actions.log` — лог успешного деплоя в GitHub Actions;
 - `react-tests-github-pages.zip` — архив проекта без `node_modules` и `dist`.
