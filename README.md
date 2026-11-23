@@ -41,9 +41,10 @@ Node.js 24: Vite 8 и jsdom 31 не поддерживают Node.js 18 из п�
 
 В `homework/`:
 
-- `screenshots/` — скриншоты сайта;
+- `screenshots/` — скриншоты сайта и CI;
 - `build.log` — вывод `npm run build`;
 - `test.log` — вывод `npm test`;
+- `lint.log` — вывод `npm run lint`;
 - `actions.log` — лог деплоя GitHub Actions;
 - `ci-success.log`, `ci-fail-lint.log`, `ci-fail-test.log` — логи CI;
 - `ci.md` — ссылки на запуски CI;
