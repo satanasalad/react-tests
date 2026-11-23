@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import PropTypes from 'prop-types'
 import QuestionCard from './QuestionCard'
 import Result from './Result'
@@ -11,7 +11,6 @@ function Quiz({ test, onExit }) {
   const [answers, setAnswers] = useState([])
   const [lives, setLives] = useState(START_LIVES)
   const [finished, setFinished] = useState(false)
-  const [score, setScore] = useState(0)
 
   const question = test.questions[step]
 
@@ -32,21 +31,15 @@ function Quiz({ test, onExit }) {
     }
   }
 
-  // подсчёт результата, когда тест закончен
-  useEffect(() => {
-    if (finished) {
-      setScore(answers.filter((answer) => answer.correct).length)
-    }
-  }, [finished, answers])
-
   function restart() {
     setStep(0)
     setValue('')
     setAnswers([])
     setLives(START_LIVES)
     setFinished(false)
-    setScore(0)
   }
+
+  const score = answers.filter((answer) => answer.correct).length
 
   if (finished) {
     return (

@@ -7,4 +7,8 @@ export default defineConfig({
   // Относительные пути к ассетам, чтобы сборка работала и в корне домена,
   // и в подпапке вида https://<username>.github.io/<repo-name>/
   base: './',
+  test: {
+    environment: 'jsdom',
+    setupFiles: './src/test/setup.js',
+  },
 })
