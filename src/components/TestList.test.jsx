@@ -26,7 +26,7 @@ describe('TestList', () => {
 
     expect(screen.getByText('Основы React')).toBeInTheDocument()
     expect(screen.getByText('JavaScript')).toBeInTheDocument()
-    expect(screen.getByText('Вопросов: 2')).toBeInTheDocument()
+    expect(screen.getByText('Вопросов: 3')).toBeInTheDocument()
     expect(screen.getByText('Вопросов: 1')).toBeInTheDocument()
   })
 
